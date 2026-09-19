@@ -98,17 +98,17 @@ export const GiveawayHomePage = () => {
       {/* Winner Announcement Ticker Slider */}
       <WinnerSlider />
 
-      {/* Main Grid: Featured Giveaways Cards (Left 9 cols) + How to Participate (Right 3 cols) */}
-      <div id="featured-section" className="row g-4 my-2">
-        <div className="col-lg-9">
-          <FeaturedGiveaways />
-        </div>
-        <div className="col-lg-3">
-          <HowToParticipate onRulesClick={() => scrollToSection('rules-section')} />
-        </div>
+      {/* 1. Featured Giveaways Prizes Block (Full Width) */}
+      <div id="featured-section">
+        <FeaturedGiveaways />
       </div>
 
-      {/* Winners & Previous Winners Tab Section */}
+      {/* 2. How to Participate Section (Full Width Standalone Section) */}
+      <div id="participate-section">
+        <HowToParticipate onRulesClick={() => scrollToSection('rules-section')} />
+      </div>
+
+      {/* 3. Lucky Winners & Previous Winners Tab Section */}
       <WinnersTabs isEnded={activeState === USER_STATES.ENDED || activeState === USER_STATES.WINNER || activeState === USER_STATES.NON_WINNER} />
 
       {/* Trust & Guarantee Section */}

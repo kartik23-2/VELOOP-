@@ -1,68 +1,65 @@
 import React from 'react';
-import { UserCheck, CheckCircle2, Coins, Trophy, ArrowRight } from 'lucide-react';
+import { UserCheck, CheckCircle2, Coins, Trophy, ArrowRight, Sparkles } from 'lucide-react';
 import styles from './HowToParticipate.module.css';
 
 export const HowToParticipate = ({ onRulesClick }) => {
   const steps = [
     {
-      num: '01',
+      num: 'Step 1',
       title: 'Sign Up / Login',
       desc: 'Create your VELOOP Rewards account or login to get started.',
-      icon: <UserCheck size={20} color="#c77dff" />,
-      colorClass: styles.purpleStep
+      icon: <UserCheck size={20} color="#6b21a8" />,
     },
     {
-      num: '02',
+      num: 'Step 2',
       title: 'Complete Tasks',
       desc: 'Complete eligible activities and verify your required entry fee.',
-      icon: <CheckCircle2 size={20} color="#00f2fe" />,
-      colorClass: styles.blueStep
+      icon: <CheckCircle2 size={20} color="#1e40af" />,
     },
     {
-      num: '03',
+      num: 'Step 3',
       title: 'Get Entries',
       desc: 'Confirm entry to earn verified entries for the giveaway event.',
-      icon: <Coins size={20} color="#38b000" />,
-      colorClass: styles.greenStep
+      icon: <Coins size={20} color="#15803d" />,
     },
     {
-      num: '04',
+      num: 'Step 4',
       title: 'Win Rewards',
       desc: 'Winners are selected randomly after the giveaway countdown ends.',
-      icon: <Trophy size={20} color="#ffb703" />,
-      colorClass: styles.orangeStep
+      icon: <Trophy size={20} color="#b45309" />,
     }
   ];
 
   return (
-    <div className={`${styles.timelineBox} glass-panel p-4 h-100 d-flex flex-column justify-content-between`}>
-      <div>
-        <h3 className={styles.timelineHeader}>
-          <span className="me-2">🚀</span> How to Participate?
-        </h3>
-        <p className={styles.timelineSub}>Follow these simple steps to join and win.</p>
-
-        <div className={styles.stepsList}>
-          {steps.map((step, idx) => (
-            <div key={idx} className={styles.stepItem}>
-              <div className={`${styles.iconWrap} ${step.colorClass}`}>
-                {step.icon}
-              </div>
-              <div className={styles.stepContent}>
-                <div className={styles.stepTitle}>
-                  <span className={styles.stepNum}>{step.num}. </span>
-                  {step.title}
-                </div>
-                <div className={styles.stepDesc}>{step.desc}</div>
-              </div>
-            </div>
-          ))}
+    <div className={`${styles.pinkSection} section-pink-block p-4 p-md-5 my-4 position-relative overflow-hidden`}>
+      <div className="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+        <div>
+          <h2 className={styles.pinkHeader}>How To Participate</h2>
+          <p className={styles.pinkSub}>Follow these simple steps to join and win.</p>
+        </div>
+        <div className={styles.tryLuckBadge}>
+          <Sparkles size={14} color="#6b21a8" /> ✦ try your luck
         </div>
       </div>
 
-      <button className={`${styles.rulesBtn} btn-veloop-outline w-100 mt-3`} onClick={onRulesClick}>
-        View Rules & Guidelines <ArrowRight size={16} />
-      </button>
+      <div className="row g-3">
+        {steps.map((step, idx) => (
+          <div key={idx} className="col-12 col-sm-6 col-lg-3">
+            <div className={styles.pinkStepCard}>
+              <div className={styles.stepNumBadge}>{step.num}</div>
+              <div className={styles.stepIconWrap}>{step.icon}</div>
+              <h4 className={styles.stepTitle}>{step.title}</h4>
+              <p className={styles.stepDesc}>{step.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="text-center mt-4">
+        <button className="btn-veloop-dark py-2 px-4" onClick={onRulesClick}>
+          View Rules & Guidelines <ArrowRight size={16} className="ms-1" />
+        </button>
+      </div>
     </div>
   );
 };

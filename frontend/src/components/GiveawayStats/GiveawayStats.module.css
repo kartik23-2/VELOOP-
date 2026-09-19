@@ -1,3 +1,77 @@
+.lavenderBanner {
+  background: linear-gradient(135deg, #c4b5fd 0%, #ddd6fe 100%);
+  color: #1e1b4b;
+  border-radius: 28px;
+  box-shadow: 0 15px 40px rgba(196, 181, 253, 0.4);
+}
+
+.stackedTextBack {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 7rem;
+  font-weight: 900;
+  color: rgba(30, 27, 75, 0.08);
+  letter-spacing: 12px;
+  user-select: none;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.stackedTextBackBottom {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 6.5rem;
+  font-weight: 900;
+  color: rgba(30, 27, 75, 0.08);
+  letter-spacing: 12px;
+  user-select: none;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.bannerTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 8px;
+  color: #1e1b4b;
+  margin: 0;
+}
+
+.timerPill {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 2px solid #1e1b4b;
+  border-radius: 40px;
+  padding: 12px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  box-shadow: 0 8px 20px rgba(30, 27, 75, 0.15);
+}
+
+.timerNum {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #1e1b4b;
+  line-height: 1;
+}
+
+.timerUnit {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #6b21a8;
+  margin-top: 4px;
+}
+
 .statCard {
   padding: 18px 20px;
   display: flex;
@@ -52,76 +126,19 @@
   color: #c77dff;
 }
 
-/* Giant Typography & 4 Pills from Reference Image 3 */
-.bgTypoText {
-  font-size: 4rem;
-  font-weight: 900;
-  letter-spacing: 12px;
-  color: #0f0d24;
-  opacity: 0.85;
-  line-height: 1;
-  user-select: none;
-  font-family: var(--font-family);
-}
-
-.bgTypoTextSub {
-  font-size: 4rem;
-  font-weight: 900;
-  letter-spacing: 12px;
-  color: #0f0d24;
-  opacity: 0.65;
-  line-height: 1;
-  user-select: none;
-  margin-top: -15px;
-}
-
-.countdownTitleRow {
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: #4c1d95;
-  margin-top: -20px;
-}
-
-.pillBox {
-  background: #f5f3ff;
-  border: 2px solid #0f0d24;
-  border-radius: 40px;
-  padding: 14px 32px;
-  min-width: 120px;
-  box-shadow: 0 10px 25px rgba(15, 13, 36, 0.15);
-  transition: transform 0.2s ease;
-}
-
-.pillBox:hover {
-  transform: translateY(-4px);
-}
-
-.pillNum {
-  font-size: 2.2rem;
-  font-weight: 900;
-  color: #0f0d24;
-  line-height: 1;
-}
-
-.pillLabel {
-  font-size: 11px;
-  font-weight: 800;
-  color: #6d28d9;
-  letter-spacing: 1px;
-  margin-top: 4px;
-}
-
 @media (max-width: 768px) {
-  .bgTypoText, .bgTypoTextSub {
+  .bannerTitle {
     font-size: 2.2rem;
     letter-spacing: 4px;
   }
-  .pillBox {
-    padding: 10px 20px;
-    min-width: 80px;
+  .stackedTextBack, .stackedTextBackBottom {
+    display: none;
   }
-  .pillNum {
+  .timerPill {
+    padding: 8px 16px;
+    min-width: 70px;
+  }
+  .timerNum {
     font-size: 1.5rem;
   }
 }

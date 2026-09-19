@@ -88,15 +88,10 @@
   gap: 8px;
 }
 
-@media (max-width: 992px) {
-  .centerBadge {
-    display: none;
-  }
-}
-
 .walletGroup {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .balancePill {
@@ -123,4 +118,28 @@
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+@media (max-width: 992px) {
+  .centerBadge {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .walletGroup {
+    gap: 4px;
+  }
+  .balancePill {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+  .logoTitle {
+    font-size: 16px;
+  }
+  .logoIcon {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
 }

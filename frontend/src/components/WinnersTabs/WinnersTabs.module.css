@@ -1,16 +1,50 @@
-.tabsContainer {
-  background: rgba(16, 13, 35, 0.85);
-  border: 1px solid rgba(138, 43, 226, 0.25);
+.luckyWinnersBlock {
+  background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+  border-radius: 28px;
+  color: #1e1b4b;
+  box-shadow: 0 15px 40px rgba(224, 231, 255, 0.4);
+}
+
+.luckyHeader {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #1e1b4b;
+  margin: 0;
+}
+
+.luckySub {
+  font-size: 13px;
+  color: #3730a3;
+  margin-top: 2px;
+}
+
+.pillBadge1 {
+  background: #c084fc;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.pillBadge2 {
+  background: #fde047;
+  color: #1e1b4b;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 20px;
 }
 
 .tabBtn {
-  background: transparent;
-  color: #a0a5c0;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  background: #ffffff;
+  color: #1e1b4b;
+  border: 2px solid #1e1b4b;
+  border-radius: 12px;
   padding: 8px 18px;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 800;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -19,20 +53,21 @@
 }
 
 .tabBtn:hover {
-  background: rgba(138, 43, 226, 0.2);
-  color: #fff;
+  background: #4c1d95;
+  color: #ffffff;
 }
 
 .activeTab {
-  background: linear-gradient(135deg, #8a2be2 0%, #3a86ff 100%);
-  color: #fff;
-  border-color: #00f2fe;
-  box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+  background: #4c1d95;
+  color: #ffffff;
+  border-color: #4c1d95;
+  box-shadow: 0 4px 15px rgba(76, 29, 149, 0.3);
 }
 
 .tabNotice {
   font-size: 12px;
-  color: #a0a5c0;
+  color: #3730a3;
+  font-weight: 700;
   display: flex;
   align-items: center;
 }
@@ -40,50 +75,37 @@
 .liveNoticeBox {
   text-align: center;
   padding: 40px 20px;
-  background: rgba(255, 183, 3, 0.04);
-  border: 1px dashed rgba(255, 183, 3, 0.3);
-  border-radius: 16px;
-}
-
-.liveNoticeBox h4 {
-  font-size: 1.3rem;
-  font-weight: 800;
-  color: #ffffff;
-  margin-bottom: 6px;
-}
-
-.liveNoticeBox p {
-  color: #a0a5c0;
-  font-size: 13px;
-  margin-bottom: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px dashed #4c1d95;
+  border-radius: 20px;
 }
 
 .statusBadge {
   display: inline-block;
-  background: rgba(56, 176, 0, 0.15);
-  border: 1px solid rgba(56, 176, 0, 0.4);
-  color: #38b000;
+  background: #15803d;
+  color: #ffffff;
   font-size: 11px;
   font-weight: 800;
-  padding: 4px 12px;
+  padding: 4px 14px;
   border-radius: 20px;
 }
 
-.winnerCard {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(138, 43, 226, 0.2);
-  border-radius: 14px;
+.winnerAvatarCard {
+  background: #ffffff;
+  border: 2px solid #1e1b4b;
+  border-radius: 16px;
   padding: 16px;
   display: flex;
   align-items: center;
   gap: 14px;
+  box-shadow: 0 4px 12px rgba(30, 27, 75, 0.08);
 }
 
 .winnerAvatar {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #ffb703 0%, #8a2be2 100%);
+  background: linear-gradient(135deg, #8a2be2 0%, #3a86ff 100%);
   color: #fff;
   font-weight: 900;
   font-size: 14px;
@@ -93,43 +115,45 @@
 }
 
 .winnerUser {
-  font-weight: 700;
-  color: #00f2fe;
+  font-weight: 800;
+  color: #4c1d95;
   font-size: 14px;
 }
 
 .winnerPrize {
-  font-weight: 800;
-  color: #ffffff;
+  font-weight: 900;
+  color: #1e1b4b;
   font-size: 13px;
 }
 
 .winnerMeta {
   font-size: 11px;
-  color: #a0a5c0;
+  color: #6b7280;
 }
 
 .historyTable {
-  background: transparent !important;
+  background: #ffffff !important;
+  border-radius: 16px;
+  overflow: hidden;
   font-size: 13px;
+  border: 2px solid #1e1b4b;
 }
 
 .historyTable th {
-  background: rgba(255, 255, 255, 0.05) !important;
-  color: #a0a5c0;
-  font-weight: 700;
-  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+  background: #312e81 !important;
+  color: #ffffff !important;
+  font-weight: 800;
 }
 
 .historyTable td {
-  border-bottom-color: rgba(255, 255, 255, 0.05) !important;
   vertical-align: middle;
 }
 
 .categoryBadge {
-  background: rgba(138, 43, 226, 0.2);
-  color: #c77dff;
+  background: rgba(76, 29, 149, 0.1);
+  color: #4c1d95;
   padding: 2px 8px;
   border-radius: 6px;
   font-size: 11px;
+  font-weight: 700;
 }
