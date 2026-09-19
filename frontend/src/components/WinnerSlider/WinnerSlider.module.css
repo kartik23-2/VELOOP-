@@ -1,0 +1,67 @@
+.sliderContainer {
+  background: rgba(18, 14, 42, 0.85);
+  border: 1px solid rgba(138, 43, 226, 0.3);
+  border-radius: 14px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sliderHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 183, 3, 0.15);
+  border: 1px solid rgba(255, 183, 3, 0.3);
+  color: #ffb703;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.marqueeTrack {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+
+.marqueeContent {
+  display: inline-flex;
+  gap: 32px;
+  animation: marquee 25s linear infinite;
+}
+
+.marqueeTrack:hover .marqueeContent {
+  animation-play-state: paused;
+}
+
+.tickerItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #e2e8f0;
+}
+
+.tickerText {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.tickerTime {
+  color: #a0a5c0;
+  font-size: 11px;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

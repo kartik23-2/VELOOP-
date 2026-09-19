@@ -1,0 +1,58 @@
+.winnerBanner {
+  background: radial-gradient(circle at 0% 50%, rgba(255, 183, 3, 0.25) 0%, rgba(18, 14, 42, 0.95) 100%);
+  border: 1px solid rgba(255, 183, 3, 0.5);
+  box-shadow: 0 10px 30px rgba(255, 183, 3, 0.2);
+}
+
+.winnerTrophyIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: rgba(255, 183, 3, 0.15);
+  border: 1px solid rgba(255, 183, 3, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.winnerBadge {
+  color: #ffb703;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.claimedBadge {
+  background: rgba(56, 176, 0, 0.15);
+  border: 1px solid rgba(56, 176, 0, 0.4);
+  color: #38b000;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.participantBanner {
+  background: rgba(56, 176, 0, 0.1);
+  border: 1px solid rgba(56, 176, 0, 0.3);
+}
+
+.entriesPill {
+  background: rgba(0, 242, 254, 0.15);
+  color: #00f2fe;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.nonWinnerBanner {
+  background: rgba(138, 43, 226, 0.1);
+  border: 1px solid rgba(138, 43, 226, 0.3);
+}

@@ -1,0 +1,171 @@
+.backBtn {
+  color: #c77dff;
+  font-weight: 700;
+  font-size: 14px;
+  background: rgba(138, 43, 226, 0.15);
+  border: 1px solid rgba(138, 43, 226, 0.35);
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.backBtn:hover {
+  color: #fff;
+  background: rgba(138, 43, 226, 0.3);
+}
+
+.heroCard {
+  background: radial-gradient(circle at 0% 50%, rgba(123, 44, 191, 0.25) 0%, rgba(16, 13, 35, 0.95) 100%);
+  border: 1px solid rgba(157, 78, 221, 0.35);
+}
+
+.visualWrapper {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 50%, rgba(157, 78, 221, 0.2) 0%, transparent 70%);
+}
+
+.heroDetailImg {
+  max-height: 180px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 30px rgba(157, 78, 221, 0.5));
+}
+
+.exclusiveBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 183, 3, 0.15);
+  border: 1px solid rgba(255, 183, 3, 0.4);
+  color: #ffb703;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.prizeHeaderTitle {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.prizeHeaderSub {
+  color: #a0a5c0;
+  font-size: 1.05rem;
+}
+
+.liveStatusPill {
+  background: rgba(56, 176, 0, 0.15);
+  border: 1px solid rgba(56, 176, 0, 0.4);
+  color: #38b000;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.liveDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #38b000;
+  box-shadow: 0 0 10px #38b000;
+}
+
+.countdownBadge {
+  background: rgba(255, 183, 3, 0.15);
+  border: 1px solid rgba(255, 183, 3, 0.4);
+  color: #ffb703;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.infoCard {
+  background: rgba(16, 13, 35, 0.85);
+  border: 1px solid rgba(138, 43, 226, 0.25);
+}
+
+.metaTile {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+}
+
+.tileLabel {
+  display: block;
+  font-size: 11px;
+  color: #a0a5c0;
+  margin-top: 4px;
+}
+
+.balanceCheckCard {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+}
+
+.sufficientNotice {
+  background: rgba(56, 176, 0, 0.15);
+  border: 1px solid rgba(56, 176, 0, 0.4);
+  color: #38b000;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.insufficientNotice {
+  background: rgba(255, 71, 126, 0.15);
+  border: 1px solid rgba(255, 71, 126, 0.4);
+  color: #ff477e;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.joinedSuccessCard {
+  background: rgba(56, 176, 0, 0.15);
+  border: 1px solid rgba(56, 176, 0, 0.4);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.stepCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(138, 43, 226, 0.2);
+  border: 1px solid #c77dff;
+  color: #00f2fe;
+  font-weight: 800;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}

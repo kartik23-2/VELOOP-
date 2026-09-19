@@ -1,0 +1,79 @@
+.statCard {
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(16, 13, 35, 0.7);
+  border: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.iconWrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.purpleIcon {
+  background: rgba(157, 78, 221, 0.2);
+  border: 1px solid rgba(157, 78, 221, 0.4);
+}
+
+.blueIcon {
+  background: rgba(0, 242, 254, 0.15);
+  border: 1px solid rgba(0, 242, 254, 0.35);
+}
+
+.greenIcon {
+  background: rgba(56, 176, 0, 0.15);
+  border: 1px solid rgba(56, 176, 0, 0.35);
+}
+
+.orangeIcon {
+  background: rgba(255, 183, 3, 0.15);
+  border: 1px solid rgba(255, 183, 3, 0.35);
+}
+
+.statLabel {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #a0a5c0;
+}
+
+.statValue {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.statSub {
+  font-size: 12px;
+  font-weight: 600;
+  color: #c77dff;
+}
+
+.countdownCard {
+  border-color: rgba(255, 183, 3, 0.35);
+  background: radial-gradient(circle at 100% 0%, rgba(255, 183, 3, 0.15) 0%, rgba(16, 13, 35, 0.8) 100%);
+}
+
+.countdownTimer {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: #ffb703;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+.remainingBadge {
+  font-size: 10px;
+  font-weight: 700;
+  color: #fb8500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

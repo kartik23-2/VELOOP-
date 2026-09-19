@@ -1,0 +1,80 @@
+.heroContainer {
+  background: radial-gradient(circle at 50% 30%, rgba(123, 44, 191, 0.25) 0%, rgba(15, 12, 35, 0.95) 100%);
+  border: 1px solid rgba(157, 78, 221, 0.35);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.heroImgLeft {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 15px 30px rgba(157, 78, 221, 0.5));
+}
+
+.heroImgRight {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 15px 30px rgba(255, 183, 3, 0.4));
+}
+
+.topBadge {
+  display: inline-block;
+  background: rgba(138, 43, 226, 0.2);
+  border: 1px solid var(--primary-purple-glow);
+  color: #c77dff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.heroHeading {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.purpleGradientText {
+  background: linear-gradient(135deg, #c77dff 0%, #7b2cbf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroSub {
+  color: #a0a5c0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 580px;
+  margin-bottom: 24px;
+}
+
+.featurePill {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #d1d5db;
+}
+
+.featurePill strong {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+  .heroHeading {
+    font-size: 2rem;
+  }
+}

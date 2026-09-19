@@ -1,0 +1,96 @@
+.timelineBox {
+  background: rgba(18, 14, 42, 0.8);
+  border: 1px solid rgba(138, 43, 226, 0.3);
+}
+
+.timelineHeader {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.timelineSub {
+  font-size: 12px;
+  color: #a0a5c0;
+  margin-bottom: 20px;
+}
+
+.stepsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.stepsList::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.08);
+  z-index: 1;
+}
+
+.stepItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.iconWrap {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.purpleStep {
+  background: rgba(157, 78, 221, 0.25);
+  border: 1px solid #9d4edd;
+}
+
+.blueStep {
+  background: rgba(0, 242, 254, 0.2);
+  border: 1px solid #00f2fe;
+}
+
+.greenStep {
+  background: rgba(56, 176, 0, 0.2);
+  border: 1px solid #38b000;
+}
+
+.orangeStep {
+  background: rgba(255, 183, 3, 0.2);
+  border: 1px solid #ffb703;
+}
+
+.stepTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.stepNum {
+  color: #c77dff;
+}
+
+.stepDesc {
+  font-size: 11px;
+  color: #a0a5c0;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+.rulesBtn {
+  font-size: 12px;
+  padding: 10px;
+}
