@@ -4,7 +4,14 @@
   --bg-dark: #070611;
   --bg-card: rgba(16, 13, 35, 0.75);
   --bg-card-border: rgba(138, 43, 226, 0.25);
-  --bg-card-hover: rgba(26, 21, 55, 0.85);
+  
+  /* Multi-themed Sections Palette from Reference Image 3 */
+  --theme-hero-bg: #0a0818;
+  --theme-countdown-bg: #c4b5fd;
+  --theme-prizes-bg: #fbf3ee;
+  --theme-participate-bg: #fbcfe8;
+  --theme-rules-bg: #0f0d24;
+  --theme-winners-bg: #e0e7ff;
   
   --primary-purple: #8a2be2;
   --primary-purple-glow: #9d4edd;
@@ -14,6 +21,7 @@
   --accent-blue: #3a86ff;
   --accent-orange: #fb8500;
   
+  --text-dark: #0f172a;
   --text-main: #ffffff;
   --text-muted: #a0a5c0;
   --text-sub: #c77dff;
@@ -29,11 +37,6 @@ body {
   font-family: var(--font-family);
   min-height: 100vh;
   overflow-x: hidden;
-  background-image: 
-    radial-gradient(circle at 15% 15%, rgba(123, 44, 191, 0.15) 0%, transparent 40%),
-    radial-gradient(circle at 85% 65%, rgba(0, 242, 254, 0.1) 0%, transparent 40%),
-    radial-gradient(circle at 50% 90%, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
-  background-attachment: fixed;
 }
 
 /* Glassmorphism utility */
@@ -42,7 +45,7 @@ body {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--bg-card-border);
-  border-radius: 20px;
+  border-radius: 24px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -52,14 +55,14 @@ body {
   box-shadow: 0 15px 40px rgba(138, 43, 226, 0.25);
 }
 
-/* Gradient Buttons */
+/* Gradient & Vibrant Buttons */
 .btn-veloop-primary {
   background: linear-gradient(135deg, #8a2be2 0%, #3a86ff 100%);
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
-  border-radius: 12px;
-  padding: 12px 24px;
+  border-radius: 14px;
+  padding: 12px 26px;
   box-shadow: 0 4px 20px rgba(138, 43, 226, 0.4);
   transition: all 0.3s ease;
   display: inline-flex;
@@ -75,13 +78,29 @@ body {
   color: #fff;
 }
 
+.btn-veloop-dark {
+  background: #0f172a;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid #0f172a;
+  border-radius: 14px;
+  padding: 12px 26px;
+  transition: all 0.3s ease;
+}
+
+.btn-veloop-dark:hover {
+  background: #1e293b;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 .btn-veloop-gold {
   background: linear-gradient(135deg, #ffb703 0%, #fb8500 100%);
   color: #000;
-  font-weight: 700;
+  font-weight: 800;
   border: none;
-  border-radius: 12px;
-  padding: 12px 24px;
+  border-radius: 14px;
+  padding: 12px 26px;
   box-shadow: 0 4px 20px rgba(255, 183, 3, 0.35);
   transition: all 0.3s ease;
 }
@@ -96,9 +115,9 @@ body {
   background: transparent;
   color: var(--text-sub);
   border: 1px solid var(--bg-card-border);
-  border-radius: 12px;
-  padding: 10px 20px;
-  font-weight: 600;
+  border-radius: 14px;
+  padding: 10px 22px;
+  font-weight: 700;
   transition: all 0.3s ease;
 }
 
@@ -106,6 +125,37 @@ body {
   background: rgba(138, 43, 226, 0.15);
   border-color: var(--primary-purple-glow);
   color: #fff;
+}
+
+/* Section styling inspired by Reference Image 3 */
+.section-banner-countdown {
+  background: var(--theme-countdown-bg);
+  color: #0f0d24;
+  border-radius: 28px;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-prizes-light {
+  background: var(--theme-prizes-bg);
+  color: #0f172a;
+  border-radius: 28px;
+  padding: 40px 28px;
+}
+
+.section-participate-pink {
+  background: var(--theme-participate-bg);
+  color: #0f172a;
+  border-radius: 28px;
+  padding: 40px 28px;
+}
+
+.section-winners-lavender {
+  background: var(--theme-winners-bg);
+  color: #0f172a;
+  border-radius: 28px;
+  padding: 40px 28px;
 }
 
 /* Animations */

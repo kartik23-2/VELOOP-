@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Gift, Users, Trophy, Clock } from 'lucide-react';
+import { Gift, Users, Trophy, Clock, Sparkles } from 'lucide-react';
 import styles from './GiveawayStats.module.css';
 
 export const GiveawayStats = () => {
   // Live Countdown State
   const [timeLeft, setTimeLeft] = useState({
-    days: 12,
-    hours: 8,
-    minutes: 45,
-    seconds: 32
+    days: 42,
+    hours: 16,
+    minutes: 50,
+    seconds: 1
   });
 
   useEffect(() => {
@@ -26,9 +26,10 @@ export const GiveawayStats = () => {
 
   return (
     <section className="my-4">
-      <div className="row g-3">
+      {/* Metrics Row */}
+      <div className="row g-3 mb-4">
         {/* Metric 1: Total Giveaways */}
-        <div className="col-6 col-md-3">
+        <div className="col-6 col-md-4">
           <div className={`${styles.statCard} glass-panel`}>
             <div className={`${styles.iconWrap} ${styles.purpleIcon}`}>
               <Gift size={22} color="#c77dff" />
@@ -43,7 +44,7 @@ export const GiveawayStats = () => {
         </div>
 
         {/* Metric 2: Total Participants */}
-        <div className="col-6 col-md-3">
+        <div className="col-6 col-md-4">
           <div className={`${styles.statCard} glass-panel`}>
             <div className={`${styles.iconWrap} ${styles.blueIcon}`}>
               <Users size={22} color="#00f2fe" />
@@ -58,7 +59,7 @@ export const GiveawayStats = () => {
         </div>
 
         {/* Metric 3: Prizes Won */}
-        <div className="col-6 col-md-3">
+        <div className="col-6 col-md-4">
           <div className={`${styles.statCard} glass-panel`}>
             <div className={`${styles.iconWrap} ${styles.greenIcon}`}>
               <Trophy size={22} color="#38b000" />
@@ -71,22 +72,37 @@ export const GiveawayStats = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Metric 4: Countdown Timer */}
-        <div className="col-6 col-md-3">
-          <div className={`${styles.statCard} ${styles.countdownCard} glass-panel`}>
-            <div className={`${styles.iconWrap} ${styles.orangeIcon}`}>
-              <Clock size={22} color="#ffb703" />
-            </div>
-            <div>
-              <span className={styles.statLabel}>Ends In</span>
-              <div className={styles.countdownTimer}>
-                {String(timeLeft.days).padStart(2, '0')}d : {String(timeLeft.hours).padStart(2, '0')}h : {String(timeLeft.minutes).padStart(2, '0')}m : {String(timeLeft.seconds).padStart(2, '0')}s
-              </div>
-              <span className={styles.remainingBadge}>Live Remaining</span>
-            </div>
+      {/* Giant Typography Banner with 4 Countdown Pills (Inspired by Reference Image 3) */}
+      <div className="section-banner-countdown text-center">
+        <div className={styles.bgTypoText}>GIVEAWAY</div>
+        
+        <div className={styles.countdownTitleRow}>
+          <Sparkles size={20} className="me-1" />
+          <span>OFFICIAL COUNTDOWN TIMER</span>
+        </div>
+
+        <div className="d-flex justify-content-center flex-wrap gap-3 my-3 position-relative z-2">
+          <div className={styles.pillBox}>
+            <div className={styles.pillNum}>{String(timeLeft.days).padStart(2, '0')}</div>
+            <div className={styles.pillLabel}>DAYS</div>
+          </div>
+          <div className={styles.pillBox}>
+            <div className={styles.pillNum}>{String(timeLeft.hours).padStart(2, '0')}</div>
+            <div className={styles.pillLabel}>HOURS</div>
+          </div>
+          <div className={styles.pillBox}>
+            <div className={styles.pillNum}>{String(timeLeft.minutes).padStart(2, '0')}</div>
+            <div className={styles.pillLabel}>MINUTES</div>
+          </div>
+          <div className={styles.pillBox}>
+            <div className={styles.pillNum}>{String(timeLeft.seconds).padStart(2, '0')}</div>
+            <div className={styles.pillLabel}>SECONDS</div>
           </div>
         </div>
+
+        <div className={styles.bgTypoTextSub}>GIVEAWAY</div>
       </div>
     </section>
   );

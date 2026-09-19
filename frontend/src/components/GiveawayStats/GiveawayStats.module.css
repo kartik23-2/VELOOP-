@@ -32,11 +32,6 @@
   border: 1px solid rgba(56, 176, 0, 0.35);
 }
 
-.orangeIcon {
-  background: rgba(255, 183, 3, 0.15);
-  border: 1px solid rgba(255, 183, 3, 0.35);
-}
-
 .statLabel {
   display: block;
   font-size: 12px;
@@ -57,23 +52,76 @@
   color: #c77dff;
 }
 
-.countdownCard {
-  border-color: rgba(255, 183, 3, 0.35);
-  background: radial-gradient(circle at 100% 0%, rgba(255, 183, 3, 0.15) 0%, rgba(16, 13, 35, 0.8) 100%);
-}
-
-.countdownTimer {
-  font-size: 1.05rem;
+/* Giant Typography & 4 Pills from Reference Image 3 */
+.bgTypoText {
+  font-size: 4rem;
   font-weight: 900;
-  color: #ffb703;
-  letter-spacing: 0.5px;
-  line-height: 1.2;
+  letter-spacing: 12px;
+  color: #0f0d24;
+  opacity: 0.85;
+  line-height: 1;
+  user-select: none;
+  font-family: var(--font-family);
 }
 
-.remainingBadge {
-  font-size: 10px;
-  font-weight: 700;
-  color: #fb8500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+.bgTypoTextSub {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 12px;
+  color: #0f0d24;
+  opacity: 0.65;
+  line-height: 1;
+  user-select: none;
+  margin-top: -15px;
+}
+
+.countdownTitleRow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #4c1d95;
+  margin-top: -20px;
+}
+
+.pillBox {
+  background: #f5f3ff;
+  border: 2px solid #0f0d24;
+  border-radius: 40px;
+  padding: 14px 32px;
+  min-width: 120px;
+  box-shadow: 0 10px 25px rgba(15, 13, 36, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.pillBox:hover {
+  transform: translateY(-4px);
+}
+
+.pillNum {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #0f0d24;
+  line-height: 1;
+}
+
+.pillLabel {
+  font-size: 11px;
+  font-weight: 800;
+  color: #6d28d9;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .bgTypoText, .bgTypoTextSub {
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+  }
+  .pillBox {
+    padding: 10px 20px;
+    min-width: 80px;
+  }
+  .pillNum {
+    font-size: 1.5rem;
+  }
 }
