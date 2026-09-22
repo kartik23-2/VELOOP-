@@ -1,4 +1,4 @@
-# VELOOP Rewards – Giveaway & Rewards Platfors
+# VELOOP Rewards – Giveaway & Rewards Platform
 
 > **Production-Ready Full-Stack Giveaway Platform** built for VELOOP Rewards featuring a high-performance React (Vite) frontend with fintech-inspired glassmorphic aesthetics, micro-interactions, custom loaders, and an Express/MongoDB backend with atomic balance deduction, compound unique database indexes, anti-fraud risk scoring, and audit logging.
 
